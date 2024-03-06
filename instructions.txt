@@ -1,0 +1,49 @@
+Backend (NestJS):
+
+1. gRPC Server for FX Quote:
+   - Set up a basic gRPC server using `grpc-js` or another library.
+   - Provide a service method to fetch FX quotes or generate random quotes.
+
+2. API Endpoint for FX Conversion:
+   - Create a RESTful API endpoint in NestJS to handle currency conversion.
+   - Define a route that accepts source currency, destination currency, and amount.
+
+3. Endpoint Protection with API Key:
+   - Implement middleware to check for the presence of an API key in the request headers.
+   - Generate an API key for clients to use when making requests to the conversion endpoint.
+
+4. MongoDB Integration:
+   - Store each conversion request in MongoDB, including information like source currency, destination currency, amount, timestamp, etc.
+
+Frontend (Next.js):
+
+1. User Interface:
+   - Design a simple UI with Next.js allowing users to input source and destination currencies and the amount to convert.
+   - Display the converted amount and FX quote retrieved from the backend.
+
+2. HTTP Client:
+   - Use `axios` to make HTTP requests from the Next.js frontend to the NestJS backend.
+
+3. API Key Authentication:
+   - Include a mechanism in the frontend to prompt users to enter their API key.
+   - Pass the API key in the request headers when calling the currency conversion endpoint.
+
+4. Error Handling:
+   - Implement error handling in the frontend to notify users of authentication failures or API errors.
+   - Handle validation errors gracefully, providing clear feedback to users.
+
+ Overall:
+
+1. Documentation:
+   - Document the process for obtaining and using the API key.
+   - Provide clear instructions for setting up and running both frontend and backend applications.
+
+2. Testing:
+   - Encourage writing basic unit tests for critical components such as API endpoints and database interactions.
+   - Focus on simple test cases to ensure functionality and catch common errors.
+
+3. Code Review:
+   - Conduct regular code reviews to ensure adherence to best practices and security considerations.
+
+Share Github repository to submit your assessment. 
+
